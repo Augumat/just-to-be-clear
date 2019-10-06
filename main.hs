@@ -21,7 +21,7 @@ main = do
 
 -- Binary 'E' mask generation
 nMasks :: Int -> [String]
-nMasks n = map (("y"++) . (++"t")) (map toBin [1..n])
+nMasks n = map (("ye"++) . (++"et")) (map toBin [0..(n-1)])
 
 toBin :: Int -> String
 toBin n = map eIfy (reverse (binHelp n))
